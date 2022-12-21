@@ -64,4 +64,3 @@ change-template: "- $TITLE #$NUMBER @$AUTHOR "
 template: |
   ## Uncategorized
   $CHANGES
-  ### Bump setup.py version must be included here!
