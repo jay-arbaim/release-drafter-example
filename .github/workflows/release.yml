@@ -51,7 +51,7 @@ jobs:
           npx github-release-notes changelog -o --token=$GITHUB_TOKEN
 
           # Update the version file
-          echo ${VERSION#v-} >| $VERSION_FILE
+          echo ${VERSION#v} >| $VERSION_FILE
 
           # Commit changes
           git add CHANGELOG.md $VERSION_FILE
