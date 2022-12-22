@@ -40,6 +40,6 @@ jobs:
           config-name: release-drafter-config.yml
           # disable-autolabeler: true
           commitish: ${{ github.ref_name }}
-          publish: ${{ startsWith(github.ref, 'refs/tags') }}
+          publish: true
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
