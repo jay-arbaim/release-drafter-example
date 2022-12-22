@@ -5,6 +5,7 @@
 
 ## 🐛 Bug Fixes
 
+- Fix version format written on the VERSION file @jay-arbaim (#18)
 - Fix git error in progress of making commit @jay-arbaim (#17)
 - Add git config @jay-arbaim (#16)
 - Add step to make changelog and version files @jay-arbaim (#15)
