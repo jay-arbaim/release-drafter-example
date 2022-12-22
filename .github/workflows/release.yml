@@ -16,6 +16,10 @@ jobs:
         run: |
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git config --global user.name "github-actions[bot]"
+      - uses: actions/checkout@v3
+        with:
+          ref: ${{ github.ref_name }}
+          fetch-depth: 0
       # Drafts your next Release notes as Pull Requests are merged into "master"
       - name: Create Release
         id: create_release
@@ -54,4 +58,4 @@ jobs:
           git commit -m "Bump version to $VERSION"
 
           # Push changes
-          git push origin main
+          git push origin ${{ github.ref_name }}
